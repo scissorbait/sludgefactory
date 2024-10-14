@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/styles.css">
+   <title>sludge factory</title>
+</head>
+<body>
+   <div class="scanline-wrap">
+   <div class="wrapper">
+      <div class="container">
+         <header>sludge factory</header>
+         
+         <div class="flex">
+            <nav>
+               <h1>Navigation</h1>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="playlists.html">Playlists</a></li>
+                  <li><a href="https://tyoma.cool/cd.html">CD collection</a></li>
+                  <li><a href="history.html">Listening history</a></li>
+                  <li><a href="concerts.html">Concert log</a></li>
+                  <li><a href="suggestions.html">Suggestion box</a></li>
+                  <li><a href="thoughts.html">Misc thoughts</a></li>
+                  <li><a href="outlinks.html">Other sites</a></li>
+               </ul>
+               <div class="buttons">
+                  <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button6.gif"></a>
+                  <a href="https://slsk.net"><img src="img/88x31/soulseek.gif" alt=""></a>
+                  <img src="img/88x31/piracy.gif" alt="">
+               </div>
+               <img class="navimg" src="img/underconstruction.gif" alt="">
+            </nav>
+            <main> 
+               <!-- <a href="https://www.last.fm/user/sacrebisous"><img src="https://lastfm-recently-played.vercel.app/api?user=sacrebisous" height="auto" width="350px"/></a> -->
+               <p>After a nasty tumble down a flight of stairs, you find yourself laying sprawled out on the cold and wet floor of the previous occupant's basement. Before you get a chance to ponder this further, the door slams shut behind you, the sound of a locking mechanism clicking into place.</p>
+               <!-- <p>You fumble for a light switch and flip it on, revealing the cold and dank atmosphere in all it's glory. An ominous, glowing green goop seeps from the cracks in the walls and slithers down torn concert posters, eventually landing in a puddle on the concrete floor. Despite the forboding atmosphere, you can tell this is was a well-lived space for someone... or something. </p>-->
+               <p>Despite your better judgement, you decide take a look around... (All zones are now available to visit.)</p>
+              
+              
+               <hr>
+               <div class="center">
+                  <p>Currently, my personal music library contains <em>7,631</em> songs.</p>
+                  <div id="lastfm-widget">
+                     <div id="widget">Last song I listened to was <span id="song">&#8987;</span></div>
+                        <div>
+                          <p><small>powered by <a href="https://github.com/biancarosa/lastfm-last-played"
+                                      target="_blank">@biancarosa/lastfm-last-played</a></small></p>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                       let user = 'sacrebisous';
+                       let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+                       let song = document.querySelector('#song');
+                       fetch(url)
+                             .then(function (response) {
+                                return response.json()
+                             }).then(function (json) {
+                                song.innerHTML = "<a href=" + json['track']['url'] + '>' + json['track']['name'] + ' by ' + json['track']['artist']['#text'] + "</a>";
+                             });
+                    </script>
+                  <a href="https://last.fm/sacrebisous">last.fm</a> • <a href="https://bandcamp.com">bandcamp</a> • <a href="https://www.discogs.com/user/scissorbait">discogs</a>
+               </div>
+               <hr>
+               <section>
+                  <h3>About <a href="about.html">&gt;&gt;</a></h3> 
+                  There's a diary sitting on a stool made of rotting wood. The diary is in good enough condition, but it's... wet. Why is everything so wet around here..?
+               </section>
+               <section class="right">
+                  <h3><a href="playlists.html">&lt;&lt;</a> Playlists</h3>
+                  A Casio boombox sits atop a wooden crate in the center of the room. Opening the box (after carefully placing the stereo on a dry surface) reveals a large collection of mixtapes.
+               </section>
+               <section>
+                  <h3>CD Collection <a href="https://tyoma.cool/cd.html">&gt;&gt;</a></h3>
+                  A sticky note atop the crate reads <em>"I left the CDs at the old house. Don't forget to bring them down."</em> ...Huh.
+               </section>
+               <section class="right">
+                  <h3><a href="history.html">&lt;&lt;</a> Listening History </h3>
+                  On a desk situated in the corner, a pair of headphones lies next to a clipboard. It holds a piece of graph paper with a spreadsheet drawn by hand, listing various different bands and songs with star ratings. What a weird hobby.
+               </section>
+               <section>
+                  <h3>Concert log <a href="concerts.html">&gt;&gt;</a></h3>
+                  Above the desk, you spot a collection of ticket stubs taped to the wall. While the tape has rubbed off a bit of the text, you think you can still make out the band names...
+               </section>
+               <section class="right">
+                   <h3><a href="suggestions.html">&lt;&lt;</a> Suggestions</h3>
+                   You initially hesitate to approach the tissue box on the desk, but upon closer inspection, you realize it's full of scraps of paper. You pull out one of the scraps and read the name of an album you once recommended to a friend.
+               </section>
+               <section>
+                   <h3>Misc thoughts <a href="thoughts.html">&gt;&gt;</a></h3>
+                   It's hard to miss the words scrawled near-incomprehensibly on the far wall of the room. Based on what you're able to read, the author seems to be highly opinionated about some pretty obscure bands.
+               </section>
+            </main>
+         </div>
+         <footer>
+            <p class="">Made with 🧡 by TYOMA!!</p>
+            <a class="tight" href="https://tyoma.cool"><img src="https://tyoma.cool/banners/tyoma.gif"alt="tyoma.cool 88x31 button"></a>
+         </footer>
+      </div>
+   </div>
+   </div>
+</body>
+</html>

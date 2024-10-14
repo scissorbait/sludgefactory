@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "Plasma Drip";
+  src: url("../fonts/plasdrip.woff");
+}
+
+@font-face {
+  font-family: "Contra";
+  src: url("../fonts/contra.woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Plasma Drip";
+  font-size: 3.5em;
+  color: rgb(0, 255, 0);
+  text-shadow: rgba(136, 255, 0) 0px 0px 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  text-shadow: magenta 0px 0px 12px;
+  letter-spacing: 2px;
+}
+
+body {
+  background: url("../img/bg.gif") black;
+  color: white;
+  box-sizing: border-box;
+  font-family: "Contra";
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+a,
+a:visited {
+  color: rgb(0, 255, 0);
+}
+
+.wrapper {
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  overflow-y: scroll;
+  display: block;
+}
+
+.container {
+  width: 70%;
+  max-width: 900px;
+  padding: 50px;
+  padding-top: 0;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+hr {
+  border: 1px dotted magenta;
+  margin: 15px auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+summary {
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+main {
+  width: 70%;
+  padding: 10px;
+  background: black;
+  border: 4px groove magenta;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+nav {
+  background: black;
+  width: 30%;
+  padding: 10px;
+  border: 4px groove magenta;
+  border-bottom: 0;
+  border-left: 1px dotted;
+  text-align: center;
+  position: relative;
+  padding-bottom: 150px;
+}
+
+nav h1 {
+  text-align: center;
+}
+
+nav ul {
+  color: white;
+  list-style-type: upper-roman;
+  padding-left: 35px;
+  text-align: left;
+}
+
+.navimg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 30px;
+  padding-top: 80px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 3px;
+}
+
+ol.tracklist li {
+    padding: 5px
+}
+
+#lastfm-widget {
+  border: 1px dotted white;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 300px;
+  padding: 10px;
+}
+
+footer {
+  background: url(https://sadhost.neocities.org/images/tiles/stars3.gif) black;
+  margin: 0;
+  border: 4px groove magenta;
+  border-top: 1px solid magenta;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scanline-wrap::before {
+  content: "";
+  background-image: url("../img/scanline.png");
+  background-repeat: repeat;
+  background-color: rgba(88, 88, 88, 0.6);
+  z-index: 10000;
+  pointer-events: none;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  position: fixed;
+  opacity: 0.35;
+}
+
+section {
+  margin: 25px 0px;
+}
+
+section h3 {
+  margin-bottom: 1px;
+}
+
+/* html comment box override */
+#HCB_comment_box h3 {
+  display: none;
+}
+
+img.hcb-icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+    border-right: 4px groove magenta;
+    border-top: 0px;
+  }
+
+  nav {
+    width: 100%;
+    border-left: 4px groove magenta;
+  }
+
+  nav h1 {
+    display: none;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  nav li::after {
+    content: " |";
+  }
+
+  img.navimg {
+    display: none;
+    position: static;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+  }
+}
