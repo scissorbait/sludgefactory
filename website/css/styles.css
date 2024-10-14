@@ -17,6 +17,7 @@ header {
   font-size: 3.5em;
   color: rgb(0, 255, 0);
   text-shadow: rgba(136, 255, 0) 0px 0px 10px;
+  margin-top: 20px;
 }
 
 h1,
