@@ -195,6 +195,14 @@ table.monthly td {
   padding: 5px;
 }
 
+div.nospace {
+  margin: 16px 0;
+}
+
+div.nospace > p {
+  margin: 0;
+}
+
 /* html comment box override */
 #HCB_comment_box h3 {
   display: none;
